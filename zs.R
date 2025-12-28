@@ -5,7 +5,7 @@ library(fpp2)
 library(forecast)
 install.packages("readxl")
 library(readxl)
-veri <- read_excel("C:\\Users\\elifs\\OneDrive\\Masaüstü\\zs_veri.xlsx", col_names = FALSE)
+veri <- read_excel("C:\\Users\\Fatihs\\OneDrive\\Masaüstü\\zs_veri.xlsx", col_names = FALSE)
 View(veri)
 names(veri) <- paste0("Veri", 1:ncol(veri))
 head(veri)
@@ -392,6 +392,7 @@ Box.test (hata10, lag = 24, type = "Ljung")
 ongoru<- forecast(veri_arima7 , h=5)
 
 ongoru[["mean"]]
+
 
 
 
